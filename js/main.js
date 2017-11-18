@@ -10,22 +10,22 @@ function imagePreload(){
   img3.src = './img/bg-skills.jpg';
   img4.src = './img/buzzle-01.png';
   img5.src = './img/hmx-logo.png';
-  img5.onload = sucPreload();
+  img5.onload = sucPreload;
 }
 
 function sucPreload(){
   var inT = new Date().getTime();
   $('#ot-ldr').css('display','none');
   $('#select-all').css('display','block');
-  console.log('afterload >> '+inT);
-  // debugger;
+  console.log('load '+inT);
 }
 
-// imagePreload();
+imagePreload();
+
 $(document).ready(function(){
   // element animate from left - test
   var outT = new Date().getTime();
-  console.log('.ready>> '+outT);
+  console.log('ready '+outT);
   function animation(){
     var left = $('.skill-progress').offset().left;
     $(".skill-progress, .skill-col h4").css({
