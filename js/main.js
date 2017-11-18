@@ -14,10 +14,12 @@ function imagePreload(){
 }
 
 function sucPreload(){
-  var inT = new Date().getTime();
-  $('#ot-ldr').css('display','none');
-  $('#select-all').css('display','block');
-  console.log('load '+inT);
+  setTimeout(function(){
+    var inT = new Date().getTime();
+    $('#ot-ldr').css('display','none');
+    $('#select-all').css('display','block');
+    console.log('load '+inT);
+  }, 2000)
 }
 
 imagePreload();
