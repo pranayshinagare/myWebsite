@@ -91,6 +91,7 @@ hr {
   align-items: center;
   -webkit-justify-content: center;
   justify-content: center;
+  background-attachment: fixed;
 }
 #header-wrapper .background-mask{
 	background: rgba(0,0,0,0.7);
@@ -246,15 +247,16 @@ hr {
 
 /* Skills Section */
 #skill-wrapper {
-	background: url("http://stas-melnikov.ru/cliparts/skills.jpg") no-repeat center 50%;
+	background: url("../img/bg-skills.jpg") no-repeat center 50%;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
 	color: #fff;
+  background-attachment: fixed;
 }
 #skill-wrapper .background-mask{
-	background: rgba(0,0,0,0.7);
+	background: rgba(0,0,0,0.6);
 	height: 100%;
 	width: 100%;
 }
@@ -282,7 +284,7 @@ hr {
 	position: absolute;
 	height: 100%;
 	background: #fff;
-	width: 1%;
+	width: 0px;
 	left: 0;
 	top: 0;
 }
@@ -400,13 +402,18 @@ hr {
 #footer p {
 	font-size: 13px;
 }
+#footer p i {
+  color: #e40b0c;
+}
 #footer a {
 	color: #a0a5a5;
 }
 #footer a:hover {
 	color: #7bc3d1;
 }
-
+#header-wrapper {
+    
+}
 /* Media Queries */
 @media(min-width:550px) {
 	.intro-text {
