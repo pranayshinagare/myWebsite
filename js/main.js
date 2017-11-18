@@ -1,5 +1,31 @@
+var img1 = new Image();
+var img2 = new Image();
+var img3 = new Image();
+var img4 = new Image();
+var img5 = new Image();
+
+function imagePreload(){
+  img1.src = './img/03-backgroud.jpg';
+  img2.src = './img/my-pic.png';
+  img3.src = './img/bg-skills.jpg';
+  img4.src = './img/buzzle-01.png';
+  img5.src = './img/hmx-logo.png';
+  img5.onload = sucPreload();
+}
+
+function sucPreload(){
+  var inT = new Date().getTime();
+  $('#ot-ldr').css('display','none');
+  $('#select-all').css('display','block');
+  console.log('afterload >> '+inT);
+  // debugger;
+}
+
+// imagePreload();
 $(document).ready(function(){
   // element animate from left - test
+  var outT = new Date().getTime();
+  console.log('.ready>> '+outT);
   function animation(){
     var left = $('.skill-progress').offset().left;
     $(".skill-progress, .skill-col h4").css({

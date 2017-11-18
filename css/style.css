@@ -6,6 +6,15 @@ body, html {
 	width: 100% !important;
 	height: 100% !important;
 }
+#ot-ldr{
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: #ccc;
+}
+#select-all{
+  display: none;
+}
 h1 {
 	font-weight: 700;
 }
