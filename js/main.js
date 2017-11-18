@@ -7,9 +7,9 @@ var img5 = new Image();
 function imagePreload(){
   img1.src = './img/03-backgroud.jpg';
   img2.src = './img/my-pic.png';
-  img3.src = './img/bg-skills.jpg';
-  img4.src = './img/buzzle-01.png';
-  img5.src = './img/hmx-logo.png';
+  img3.src = './img/buzzle-01.png';
+  img4.src = './img/hmx-logo.png';
+  img5.src = './img/bg-skills.jpg';
   img5.onload = sucPreload;
 }
 
